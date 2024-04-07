@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
     Button getData;
 
     TextView selectedCityText;
-    public static final String API_CALL_MAIN = "http://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&units=imperial&cnt=5&appid=a38e54c7d482e39246ffaace063d3eba";
-    public static final String API_CAll_LATLON = "http://api.openweathermap.org/geo/1.0/zip?zip={zip code},US&appid=a38e54c7d482e39246ffaace063d3eba";
+    public static final String API_CALL_MAIN = "http://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&units=imperial&cnt=5&appid="+BuildConfig.API_KEY;
+    public static final String API_CAll_LATLON = "http://api.openweathermap.org/geo/1.0/zip?zip={zip code},US&appid="+BuildConfig.API_KEY;
 
     ImageView mainImage;
     TextView textViewMainCurrent, textViewMainLow, textViewMainHigh;
